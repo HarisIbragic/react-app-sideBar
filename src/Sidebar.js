@@ -56,9 +56,11 @@ const Sidebar = () => {
   const { isSideBarOpen, closeSideBar } = useGlobalContext();
 
   return (
-    <aside
-      className={isSideBarOpen ? 'sidebar show-sidebar' : 'sideBar'}
-    ></aside>
+    <aside className={isSideBarOpen ? 'sidebar show-sidebar' : 'sideBar'}>
+      <div className='sidebar-header'>
+        <img src={logo} alt={logo} />
+      </div>
+    </aside>
   );
 };
 
