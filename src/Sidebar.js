@@ -45,3 +45,15 @@
 // };
 
 // export default Sidebar;
+
+import React from 'react';
+import { useGlobalContext } from './context';
+import logo from './logo.svg';
+import { social, links } from './data';
+import { FaTimes } from 'react-icons/fa';
+
+const Sidebar = () => {
+  return <div>Sidebar</div>;
+};
+
+export default Sidebar;
