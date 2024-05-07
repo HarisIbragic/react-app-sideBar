@@ -53,7 +53,13 @@ import { social, links } from './data';
 import { FaTimes } from 'react-icons/fa';
 
 const Sidebar = () => {
-  return <div>Sidebar</div>;
+  const { isSideBarOpen, closeSideBar } = useGlobalContext();
+
+  return (
+    <aside
+      className={isSideBarOpen ? 'sidebar show-sidebar' : 'sideBar'}
+    ></aside>
+  );
 };
 
 export default Sidebar;
