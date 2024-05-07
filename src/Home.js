@@ -18,3 +18,15 @@
 // };
 
 // export default Home;
+
+import React from 'react';
+import { FaBars } from 'react-icons/fa';
+import { useGlobalContext } from './context';
+
+const Home = () => {
+  const { openModal, closeModal } = useGlobalContext();
+
+  return <main></main>;
+};
+
+export default Home;
